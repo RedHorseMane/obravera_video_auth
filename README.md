@@ -10,7 +10,7 @@
 
 Video provenance and authentication system, currently in its **fingerprint robustness benchmarking** phase. ObraVera Video evaluates how perceptual video fingerprints (ISCC video, vPDQ) survive the everyday transformations that platform pipelines, editing tools, and adversaries apply to video — re-encoding, scaling, frame-rate changes, clipping, blur, brightness shifts, noise, AI regeneration. The bench produces versioned JSON + Markdown reports comparing fingerprint robustness across a transform matrix.
 
-The benchmark is the foundation. Once the survivability envelope is mapped honestly, ObraVera Video extends to a full multi-layer authentication stack analogous to its sibling [ObraVera Audio](https://github.com/RedHorseMane/obravera_audio_auth) — combining fingerprints with C2PA manifests, watermarking, registry-based recovery, and Ed25519-signed credentials.
+The benchmark is the foundation. Once the survivability envelope is mapped objectively, ObraVera Video extends to a full multi-layer authentication stack analogous to its sibling [ObraVera Audio](https://github.com/RedHorseMane/obravera_audio_auth) — combining fingerprints with C2PA manifests, watermarking, registry-based recovery, and Ed25519-signed credentials.
 
 ## Key Features
 
@@ -39,7 +39,7 @@ The benchmark is the foundation. Once the survivability envelope is mapped hones
 - Noise: `noise_injection_low` (σ=5), `noise_injection_high` (σ=15) — **deterministically seeded** so reports are reproducible
 - Speed: `speed_1.1x`, `speed_0.9x`
 
-**Tier 3 — ML-based regeneration attacks (4 stubs, GPU-required):** Currently registered as `Outcome.SKIPPED` cells in reports so the gap is named honestly rather than silently omitted.
+**Tier 3 — ML-based regeneration attacks (4 stubs, GPU-required):** Currently registered as `Outcome.SKIPPED` cells in reports so the gap is named objectively rather than silently omitted.
 - `sdxl_regen_per_frame` — SDXL img2img per-frame regeneration (the canonical "regen attack" that defeats most watermarks)
 - `video_diffusion_regen` — Stable Video Diffusion full-clip resynthesis
 - `neural_frame_interp` — RIFE/FILM neural frame interpolation
